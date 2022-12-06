@@ -16,8 +16,8 @@ namespace Dsi.Utility {
         public const string SeverityFatal = "F";
         public const string SeverityDebug = "D";
 
-        public string? _fullPath = null;
-        private System.IO.StreamWriter? _streamWriter;
+        public string _fullPath = null;
+        private System.IO.StreamWriter _streamWriter = null;
 
         public void Log(string message, string severity = SeverityInformation) {
             var timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff");
